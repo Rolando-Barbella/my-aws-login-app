@@ -7,7 +7,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Router>
-          <Switch>My app</Switch>
+          <Switch>
+            <div>
+              My app
+            </div>
+          </Switch>
         </Router>
       </header>
     </div>
