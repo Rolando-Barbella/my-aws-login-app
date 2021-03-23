@@ -1,6 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router-dom'
-import './App.css'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Login from './components/Login';
+import Register from './components/Register';
+import ConfirmRegister from './components/ConfirmRegister';
+import PrivateRoute from './components/PrivateRoute';
+
+import './App.css';
+import './tailwind.generated.css';
 
 function App() {
   return (
@@ -8,9 +18,11 @@ function App() {
       <header className="App-header">
         <Router>
           <Switch>
-            <div>
-              My app
-            </div>
+            <PrivateRoute path="/home">
+            </PrivateRoute>
+            <Route component={ConfirmRegister} path="/confirm-register" />
+            <Route component={Login} path="/log-in" />
+            <Route component={Register} path="/" />
           </Switch>
         </Router>
       </header>
