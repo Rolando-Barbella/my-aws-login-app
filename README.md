@@ -1,6 +1,6 @@
 # Auth flow with Aws Amplify, ReactJs, and Tailwind CSS
 
-This app is based on the following blog [post]()
+This app is based on the following blog [post](https://dev.to/aws-builders/auth-flow-with-aws-amplify-reactjs-and-tailwind-css-10mo)
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
