@@ -15,6 +15,7 @@ import './tailwind.generated.css';
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
         <Router>
           <Switch>
@@ -26,6 +27,7 @@ function App() {
           </Switch>
         </Router>
       </header>
+      
     </div>
   )
 }

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -10,7 +12,9 @@ Amplify.configure(awsconfig);
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header/>
     <App />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
