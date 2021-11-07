@@ -1,6 +1,7 @@
 import React from 'react'
 import Auth from '@aws-amplify/auth';
 import { Link } from "react-router-dom";
+import Banner from './common/Banner';
 
 const Home = () => {
   let signOut = async() => {
@@ -9,6 +10,11 @@ const Home = () => {
   }
   return (
     <div>
+      <Banner
+        subHeading="Launch Tracker"
+        heading="Don't Miss a Launch"
+        description="Launch tracker keeps you up to date on the latest launches."
+        />
       <h2 className="px-3 mb-3 lg:mb-3 uppercase tracking-wide font-semibold text-sm lg:text-lg text-gray-900">
         Home page
       </h2>
